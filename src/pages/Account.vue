@@ -1,4 +1,7 @@
 <template>
+    <div class="home-link">
+        <router-link to="/main"><i class="ri-arrow-left-line"></i></router-link>
+    </div>
     <div class="container">
         <div class="columns-2">
         <div class="img-container">
@@ -9,13 +12,14 @@
                 </h3>
             </div>
         </div>
-        <div class="form-container">
-            <h1>Log In</h1>
-            <form>
-                <input type="text" placeholder="Login">
-                <input type="password" placeholder="Password">
-                <button class="btn-blue" @click.prevent="router.push('/main')">Go to the journey</button>
-            </form>
+        <div class="data-container">
+            <h1>Name</h1>
+            <div class="user-data">
+                <div class="user-data__item">Race</div>
+                <div class="user-data__item">Decription_of_character</div>
+                <div class="user-data__item">login</div>
+                <button class="btn-blue" @click.prevent="router.push('/main')">Log out</button>
+            </div>
         </div>
     </div>
     </div>
@@ -32,28 +36,31 @@ const router = useRouter();
     color: #fff;
     font-size: 3em;
  }
- .form-container {
+ .data-container {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    form {
+    .user-data {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 10px;
     }
-    input {
+    .user-data__item {
         width: 400px;
-        height: 80px;
+        height: 100px;
         border-radius: 10px;
-        text-align: center;
         text-transform: uppercase;
         font-size: 1em;
         outline: none;
-        border: none;
+        background: #fff;
+        color: #858383;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     button {
         margin-top: 30px;

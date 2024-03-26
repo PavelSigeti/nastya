@@ -4,7 +4,7 @@
     </div>
     <div class="container">
         <header>
-            <h1>RECENT HISTORY</h1>
+            <h1>BATTLES</h1>
         </header>
         <div class="table-container">
             <table>
@@ -13,7 +13,7 @@
                         <th>NO</th>
                         <th>Time</th>
                         <th>Planet</th>
-                        <th>Doctor</th>
+                        <th>Enemy</th>
                         <th>Deccription</th>
                     </tr>
                 </thead>
@@ -42,29 +42,16 @@
                 </tbody>
             </table>
         </div>
-        <div class="btn-container">
-            <div class="btn-blue" @click="router.push('/search')">Search for more</div>
-        </div>
     </div>
 </template>
 
 <script setup>
-import { useRouter } from "vue-router";
 
-const router = useRouter();
 </script>
 
 <style lang="scss" scoped>
  h1 {
     font-size: 8em;
     text-align: center;
- }
- .btn-container {
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
  }
 </style>

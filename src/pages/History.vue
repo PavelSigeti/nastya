@@ -4,7 +4,7 @@
     </div>
     <div class="container">
         <header>
-            <h1>RECENT HISTORY</h1>
+            <h1>Current HISTORY</h1>
         </header>
         <div class="table-container">
             <table>

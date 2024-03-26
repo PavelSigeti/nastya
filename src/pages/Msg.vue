@@ -4,7 +4,7 @@
     </div>
     <div class="container">
         <header>
-            <h1>RECENT HISTORY</h1>
+            <h1>Messages</h1>
         </header>
         <div class="table-container">
             <table>
@@ -12,46 +12,28 @@
                     <tr>
                         <th>NO</th>
                         <th>Time</th>
-                        <th>Planet</th>
-                        <th>Doctor</th>
-                        <th>Deccription</th>
+                        <th>From</th>
+                        <th>MESSAGE</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>12345</td>
                         <td>1963-Present</td>
-                        <td>Galifrey</td>
-                        <td>Doctor</td>
-                        <td>Someone died</td>
-                    </tr>
-                    <tr>
-                        <td>12345</td>
-                        <td>1963-Present</td>
-                        <td>Galifrey</td>
-                        <td>Doctor</td>
-                        <td>Someone died</td>
-                    </tr>
-                    <tr>
-                        <td>12345</td>
-                        <td>1963-Present</td>
-                        <td>Galifrey</td>
-                        <td>Doctor</td>
-                        <td>Someone died</td>
+                        <td>Dalecks</td>
+                        <td>lalalalalallalallllllallalalallalallallalallalallalal</td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <div class="btn-container">
-            <div class="btn-blue" @click="router.push('/search')">Search for more</div>
+            <router-link to="/msg-page" class="btn-blue">Write a message</router-link>
         </div>
     </div>
 </template>
 
 <script setup>
-import { useRouter } from "vue-router";
 
-const router = useRouter();
 </script>
 
 <style lang="scss" scoped>

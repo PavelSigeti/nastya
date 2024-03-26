@@ -20,8 +20,43 @@ export default [
         component: () => import('../pages/Login.vue'),
     },
     {
+        path: '/account',
+        name: 'account',
+        component: () => import('../pages/Account.vue'),
+    },
+    {
         path: '/recent',
         name: 'recent',
         component: () => import('../pages/Recent.vue'),
+    },
+    {
+        path: '/msg',
+        name: 'msg',
+        component: () => import('../pages/Msg.vue'),
+    },
+    {
+        path: '/battles',
+        name: 'battles',
+        component: () => import('../pages/Battles.vue'),
+    },
+    {
+        path: '/msg-page',
+        name: 'msg-page',
+        component: () => import('../pages/Msg-page.vue'),
+    },
+    {
+        path: '/search',
+        name: 'search',
+        component: () => import('../pages/Search.vue'),
+    },
+    {
+        path: '/history',
+        name: 'history',
+        component: () => import('../pages/History.vue'),
+    },
+    {
+        path: '/character',
+        name: 'character',
+        component: () => import('../pages/Character.vue'),
     },
 ];

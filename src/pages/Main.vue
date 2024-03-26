@@ -1,7 +1,7 @@
 <template>
     <main>
         <div class="container">
-            <h2>Hello &lt;Character_name&gt;</h2>
+            <h2><router-link to="/account">Hello &lt;Character_name&gt;</router-link></h2>
             <h1>
                 Meet the Extraordinary <br>
                 Individuals who've braved the <br>
@@ -10,7 +10,7 @@
                 story line.
             </h1>
             <div class="link-container">
-                <router-link to="/" class="nav-link">
+                <router-link to="/recent" class="nav-link">
                     <div class="nav-img"></div>
                     <div class="nav-text">
                         <span class="nav-title">Time Travels</span>
@@ -20,7 +20,7 @@
                         <i class="ri-arrow-right-s-line"></i>
                     </div>
                 </router-link>
-                <router-link to="/" class="nav-link">
+                <router-link to="/msg" class="nav-link">
                     <div class="nav-img"></div>
                     <div class="nav-text">
                         <span class="nav-title">Messages</span>
@@ -30,7 +30,7 @@
                         <i class="ri-arrow-right-s-line"></i>
                     </div>
                 </router-link>
-                <router-link to="/" class="nav-link">
+                <router-link to="/battles" class="nav-link">
                     <div class="nav-img"></div>
                     <div class="nav-text">
                         <span class="nav-title">Battles</span>
